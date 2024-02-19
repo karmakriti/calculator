@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="./app.js"></script>
+    <title>Calculator App</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="center-align">Calculator App</h1>
+    <div class="row">
+        <div class="input-field col s12">
+            <input type="text" id="result" class="screen center-align" readonly>
+        </div>
+        <div class="col s12">
+            <button onclick="clearScreen()" class="waves-effect waves-light btn red lighten-1 col s3">C</button>
+        </div>
+        <div class="col s12">
+            <button onclick="display('1')" class="waves-effect waves-light btn col s3">1</button>
+            <button onclick="display('2')" class="waves-effect waves-light btn col s3">2</button>
+            <button onclick="display('3')" class="waves-effect waves-light btn col s3">3</button>
+            <button onclick="display('/')" class="waves-effect waves-light btn col s3">/</button>
+        </div>
+        <div class="col s12">
+            <button onclick="display('4')" class="waves-effect waves-light btn col s3">4</button>
+            <button onclick="display('5')" class="waves-effect waves-light btn col s3">5</button>
+            <button onclick="display('6')" class="waves-effect waves-light btn col s3">6</button>
+            <button onclick="display('+')" class="waves-effect waves-light btn col s3">+</button>
+        </div>
+        <div class="col s12">
+            <button onclick="display('7')" class="waves-effect waves-light btn col s3">7</button>
+            <button onclick="display('8')" class="waves-effect waves-light btn col s3">8</button>
+            <button onclick="display('9')" class="waves-effect waves-light btn col s3">9</button>
+            <button onclick="display('-')" class="waves-effect waves-light btn col s3">-</button>
+        </div>
+        <div class="col s12">
+            <button onclick="display('.')" class="waves-effect waves-light btn col s3">.</button>
+            <button onclick="display('0')" class="waves-effect waves-light btn col s3">0</button>
+            <button onclick="display('*')" class="waves-effect waves-light btn col s3">*</button>
+            <button onclick="solve()" class="waves-effect waves-light btn col s3">=</button>
+        </div>
+    </div>
+</div>
+
+<!-- Materialize JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
